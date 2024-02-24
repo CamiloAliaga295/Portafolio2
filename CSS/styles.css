@@ -126,7 +126,8 @@ html{
   font-size: 48px;
   text-align: center;
   padding: 20px 0;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  margin-top: 50px;
   
 }
 
@@ -136,6 +137,7 @@ html{
   margin-bottom: 20px;
   margin-left: 40px ;
   margin-right: 40px;
+  margin-top: 20px;
 }
 
 .sobremi .contenido-seccion p{
@@ -146,51 +148,6 @@ html{
 .sobremi .contenido-seccion p span{
   color:#eec636;
   font-weight: bold;
-}
-.sobremi .fila{
-  display: flex;
-  margin-top: 25px;
-}
-.sobremi .fila .col{
-  width: 50%;
-}
-.sobremi .fila .col h3{
-  font-size: 28px;
-
-  margin-bottom: 25px;
-}  
-
-.sobremi .fila .col ul{
-  list-style: none;
-}
-.sobremi .fila .col ul li{
-  margin: 12px 0 
-}
-
-
-
-
-.sobremi .fila .col .contenedor-intereses{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.sobremi .fila .col .contenedor-intereses .intereses{
-  width: 100px;
-  height: 100px;
-  background-color: #252A2E;
-  border-radius: 10px;
-  margin: 0 15px 15px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: .3s;
-}
-
-.sobremi .fila .col .contenedor-intereses .intereses i{
-  font-size: 30px;
-  margin-bottom: 10px;
 }
 
 .sobremi a{
@@ -395,6 +352,66 @@ html{
   color: #eec636;
   display: inline-block;
   margin-right: 20px;
+}
+
+footer{
+  background-color: #252A2E;
+  color: #fff;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+  nav{
+    display:none
+  }
+  .nav-responsive{
+    display: block;
+  }
+  nav.responsive{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252A2E;
+    width: 180px;
+  }
+  nav.responsive ul{
+    display: block !important;
+  }
+  nav.responsive ul li{
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .sobremi h2 {
+    margin-top: 30px; /* Ajusta el valor según sea necesario para pantallas pequeñas */
+    margin-bottom: 5px;
+    font-size: 30px; /* Ajusta el tamaño de fuente según sea necesario */
+  }
+
+  .sobremi .contenido-seccion {
+    margin-top: 15px; /* Ajusta el valor según sea necesario para pantallas pequeñas */
+  }
+}
+
+
+@media screen and (max-width:700px){
+  .portfolio .galeria{
+    display: block;
+    width: 100%;
+  }
+  .portfolio .galeria .proyecto{
+    max-width: 100%;
+  }
+  .portfolio .galeria .proyecto img{
+    width: 100%;
+  }
 }
 
 
